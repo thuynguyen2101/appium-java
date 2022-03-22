@@ -29,7 +29,7 @@ public class Lab02 {
          }else {
              System.out.println("Obesity");
          }
-
+        // tìm so lượng số chẵn số lẻ
         System.out.println("Enter a number: ");
          int inputNumber = scanner.nextInt();
          if(inputNumber%2 !=0)

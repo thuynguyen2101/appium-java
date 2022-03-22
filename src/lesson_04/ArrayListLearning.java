@@ -15,7 +15,7 @@ public class ArrayListLearning {
         myIntList.add(1); // index=0
         myIntList.add(3); //
         myIntList.add(4); //
-        myIntList.add(1,2);
+        myIntList.add(1,2); //Update
 
 
         myIntList.set(3,6);
@@ -31,7 +31,6 @@ public class ArrayListLearning {
         myIntList.remove(3);
         for (Integer value : myIntList) {
             System.out.println(value);
-
         }
 
 
