@@ -18,7 +18,7 @@ public class Lab_061 {
         System.out.println("Hours: "+intHours);
         int intMinutes= Integer.parseInt(minutes);
         System.out.println("Minutes: "+intMinutes);
-        System.out.println((((intHours * 60) + intMinutes)));
+        System.out.println("Total minutes are: "+(((intHours * 60) + intMinutes)));
 
 
     }
