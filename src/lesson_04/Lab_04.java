@@ -17,7 +17,7 @@ public class Lab_04 {
 4. Get minimum number
          * */
 
-        List<Integer> myIntList= new ArrayList<>();
+        List<Integer> myIntList = new ArrayList<>();
         boolean isContinuing = true;
         while (isContinuing) {
             //Display menu
@@ -28,14 +28,12 @@ public class Lab_04 {
             System.out.println("4.Print min value");
 
 
-
             //input option
             Scanner scanner = new Scanner(System.in);
             System.out.println("Option number, please: ");
             int userInput = scanner.nextInt();
             //add number into arraylist
-           // Scanner scanner = new Scanner(System.in);
-            System.out.println("Add number into arraylist, please: ");
+            // Scanner scanner = new Scanner(System.in);
 
 
             //Trigger base on user's input
@@ -44,21 +42,44 @@ public class Lab_04 {
 //                isContinuing = false;
 //                System.out.println("Good bye!");
 //            }
-            if (userInput == 1) {
-                myIntList.add(1);
-                myIntList.add(2);
-                myIntList.add(3);
-            }
-            if (userInput == 2) {
-                System.out.println(myIntList);
-            }
-            if(userInput == 3){
-                System.out.println("Max value: "+ Collections.max(myIntList));
-            }
-            if(userInput==4){
-                System.out.println("Min value: "+Collections.min(myIntList));
-            }
-        }
+//            if (userInput == 1) {
+//                System.out.println("Add number into arraylist, please: ");
+//                myIntList.add(1);
+//                myIntList.add(2);
+//                myIntList.add(3);
+//            }
+//            if (userInput == 2) {
+//                System.out.println(myIntList);
+//            }
+//            if(userInput == 3){
+//                System.out.println("Max value: "+ Collections.max(myIntList));
+//            }
+//            if(userInput==4){
+//                System.out.println("Min value: "+Collections.min(myIntList));
+//            }
 
+
+            switch (userInput) {
+                case 1:
+                    System.out.println("Add number into arraylist, please: ");
+                    myIntList.add(1);
+                    myIntList.add(2);
+                    myIntList.add(3);
+                    break;
+                case 2:
+                    System.out.println("Print the Arraylist: " + myIntList);
+                    break;
+                case 3:
+                    System.out.println("Max value: " + Collections.max(myIntList));
+                    break;
+                case 4:
+                    System.out.println("Min value: " + Collections.min(myIntList));
+                    break;
+
+                default:
+                    System.out.println("Good bye!");
+            }
+
+        }
     }
 }
