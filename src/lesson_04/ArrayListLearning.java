@@ -13,7 +13,7 @@ public class ArrayListLearning {
 //        myArrayList.add(4);//add ko được , remove ra ko được chỉ có update là được
        //Add value
         myIntList.add(1); // index=0
-        myIntList.add(3); //
+        myIntList.add(3); //index=1
         myIntList.add(4); //
         myIntList.add(1,2); //Update
 
@@ -28,6 +28,7 @@ public class ArrayListLearning {
             System.out.println(myIntList.get(index));
         }
         // enhance for
+        //Remove at a position
         myIntList.remove(3);
         for (Integer value : myIntList) {
             System.out.println(value);

@@ -46,4 +46,7 @@ public class ArrayListLearnin_2 {
         List<Integer> listFromArr= Arrays.asList(myIntArrWrapperType);
 
     }
+
+
+    //Arraylist 
 }
