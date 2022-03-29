@@ -13,7 +13,7 @@ public class Lab_07_test_book {
     * */
     public static void main(String[] args) {
         List<Book> newBook= new ArrayList<>();
-        Map<Integer, String> student = new HashMap<>();
+        //Map<String, String,String,String> book = new HashMap<>();
         boolean isContinuing = true;
 
         Book book1= new Book("978-1138793248","Selenium testing","John","1990");
@@ -47,10 +47,9 @@ public class Lab_07_test_book {
                     newBook.add(book4);
                     break;
                 case 2:
-                    Set<Integer> allStudents= student.keySet();
-                    System.out.println("Print information of these students: ");
-                    for (Integer index : allStudents) {
-                        System.out.println(student.get(index));
+                    System.out.println("Find book by ISBN:");
+                    for (Book index : newBook) {
+                        System.out.println(index);
                     }
                     break;
 
@@ -61,6 +60,5 @@ public class Lab_07_test_book {
 
         }
     }
-
 
 }
